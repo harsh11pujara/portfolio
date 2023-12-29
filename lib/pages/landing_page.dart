@@ -14,7 +14,7 @@ class LandingPage extends StatelessWidget {
         // decoration: BoxDecoration(),
         child: Stack(
           children: [
-            SvgPicture.asset('assets/images/landing_bg.svg',fit: BoxFit.fitHeight, width: deviceWidth(context)/1.1  , height: double.infinity, alignment: Alignment.centerLeft),
+            SvgPicture.asset('assets/images/landing_bg.svg',fit: BoxFit.fill, width: deviceWidth(context)/1.1  , height: double.infinity, alignment: Alignment.centerLeft),
             Column(children: [
               CustomAppbar(),
             ],)

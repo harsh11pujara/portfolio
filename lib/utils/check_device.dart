@@ -4,6 +4,10 @@ double deviceWidth(context){
   return MediaQuery.of(context).size.width;
 }
 
+double deviceHeight(context){
+  return MediaQuery.of(context).size.height;
+}
+
 class CheckDevice{
   static double width = 0.0;
   static bool isMobile = false;

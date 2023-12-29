@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/pages/landing_page.dart';
 import 'package:my_portfolio/pages/skill_page.dart';
+import 'package:my_portfolio/utils/check_device.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,9 +17,9 @@ class _HomeState extends State<Home> {
       body: SingleChildScrollView(child: Column(
         children: [
           /// LANDING PAGE
-          Container(height: 740, child: LandingPage(),),
+          Container(height: deviceHeight(context)/1.1, child: LandingPage(),),
           /// Skills Stack
-          Container(height: 800, child: SkillsPage()),
+          Container(height: deviceHeight(context)/1.2, child: SkillsPage()),
           /// Work Projects
           Container(height: 500, color: Colors.blue[500],),
           /// About Me
