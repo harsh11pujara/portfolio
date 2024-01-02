@@ -10,12 +10,7 @@ class AboutMePage extends StatelessWidget {
       width: deviceWidth(context),
       // decoration: BoxDecoration(),
       child: Stack(
-        children: [
-          // Positioned(top: 0,child: SizedBox(child: SvgPicture.asset('assets/images/home_about_bg.svg',fit: BoxFit.scaleDown, width: deviceWidth(context)/1.1, alignment: Alignment.centerLeft,))),
-          // Column(children: [
-          //   CustomAppbar(),
-          // ],)
-        ],
+        children: [],
       ),
     );
   }

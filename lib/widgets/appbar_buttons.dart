@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:my_portfolio/utils/app_colors.dart';
+import 'package:my_portfolio/theme/app_theme.dart';
 
 Widget appBarButton({required bool isSelected, required String text, required Function() onTap}){
   return InkWell(
     onTap: onTap,
     child: Container(
       alignment: Alignment.bottomRight,
-      height: 120,
-      width: 150,
+      height: 200,
+      width: 140,
       child: Stack(
         children: [
-          isSelected ? SvgPicture.asset('assets/images/navbar_selected_splash.svg', height: 100, width: 120, alignment: Alignment.bottomRight,) : Container(),
-          Positioned(top: 30, left: text == 'Connect' ? 48 : 55,child: Text(text, style: TextStyle(color: isSelected ? appBarSelectedText : appBarText),))
+          isSelected ? SvgPicture.asset('assets/images/navbar_selected_splash.svg', height: 200, width: 180, alignment: Alignment.bottomCenter,fit: BoxFit.fill,) : Container(),
+          Positioned(top: 30, left: text == 'Connect' ? 25 : 34,child: Text(text, style: isSelected ? AppTheme.appBarSelectedStyle : AppTheme.appBarUnselectedStyle,))
         ],
       ),
     ),

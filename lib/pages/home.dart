@@ -49,9 +49,9 @@ class _HomeState extends State<Home> {
   Widget landingBackground() {
     return SvgPicture.asset(
       'assets/images/home_about_bg.svg',
-      fit: BoxFit.cover,
+      fit: BoxFit.contain,
       // width: deviceWidth(context) / 1.1,
-      // alignment: Alignment.centerLeft,
+      alignment: Alignment.topLeft,
     );
   }
 }
