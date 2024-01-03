@@ -21,7 +21,7 @@ class AboutMePage extends StatelessWidget {
             child: Stack(
               children: [
 
-                SizedBox(height: 400, width: 400, child: Image.asset('assets/images/BG.jpg', fit: BoxFit.cover,)),
+                SizedBox(height: 150, width: 85, child: SvgPicture.asset('assets/images/dots_new.svg', fit: BoxFit.cover, colorFilter: ColorFilter.mode(Colors.pink[50]!, BlendMode.srcIn),)),
                 // Positioned(left: 100, top: 0,child: ClipPath(
                 //   clipper: ImageClipper(),
                 //   child: Image.asset('assets/images/profile_image/profile.jpg', fit: BoxFit.fill,),
