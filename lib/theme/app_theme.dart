@@ -12,6 +12,7 @@ class AppTheme{
         ..color = Colors.white);
 
   static TextStyle descriptionTextStyle = const TextStyle(fontFamily: 'LeagueSpartan-SemiBold', fontSize: 24, color: generalHeadingTextColor);
+  static TextStyle scrollDownTextStyle = const TextStyle(fontFamily: 'LeagueSpartan-Medium', fontSize: 12, color: generalHeadingTextColor);
 
 
 }

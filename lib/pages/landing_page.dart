@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:my_portfolio/theme/app_colors.dart';
 import 'package:my_portfolio/theme/app_theme.dart';
 import 'package:my_portfolio/utils/check_device.dart';
 import 'package:my_portfolio/widgets/appbar.dart';
@@ -27,10 +28,15 @@ class LandingPage extends StatelessWidget {
               const SizedBox(height: 30,),
               Row(mainAxisAlignment: MainAxisAlignment.start,children: [
                 InkWell(onTap: () {}, child: SvgPicture.asset('assets/images/github_logo.svg', height: 30,)),
-                SizedBox(width: 20,),
+                const SizedBox(width: 20,),
                 InkWell(onTap: () {}, child: SvgPicture.asset('assets/images/linkedin_logo.svg', height: 30))
+              ],),
+              const SizedBox(height: 200,),
+              Row(mainAxisAlignment: MainAxisAlignment.start,children: [
+                SvgPicture.asset('assets/images/scroll_icon.svg', height: 18, colorFilter: const ColorFilter.mode(generalHeadingTextColor, BlendMode.srcIn),),
+                const SizedBox(width: 10,),
+                Text('Scroll Down', style: AppTheme.scrollDownTextStyle,)
               ],)
-
             ],
           ),
         ),

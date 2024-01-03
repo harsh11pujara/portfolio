@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
         children: [
           SizedBox(
             width: deviceWidth(context),
-            height: 1500,
+            height: 2500,
             child: Stack(
               children: [
                 landingBackground(),
