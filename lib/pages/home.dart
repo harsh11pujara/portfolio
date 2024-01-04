@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
           ),
           SizedBox(
             width: deviceWidth(context),
-            height: 800,
+            height: 1550,
             child: Stack(
               children: [
                 skillsBackground(),
@@ -76,12 +76,12 @@ class _HomeState extends State<Home> {
       top: 0,
       child: SizedBox(
         width: deviceWidth(context) * 0.8,
-        height: deviceHeight(context) * 2 ,
+        height: deviceHeight(context) * 1.8 ,
         child: SvgPicture.asset(
           'assets/images/skills_bg.svg',
           // height: 1500,
           fit: BoxFit.fitWidth,
-          alignment: Alignment.bottomRight,
+          // alignment: Alignment.topRight,
         ),
       ),
     );

@@ -12,7 +12,7 @@ class SkillsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: deviceWidth(context),
-      height: 600,
+      height: 1000,
       alignment: Alignment.topCenter,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
