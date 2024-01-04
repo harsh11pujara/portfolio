@@ -14,4 +14,4 @@ const String aboutMeDesc = 'An inquisitive Computer Science Engineering student,
 /// Skill Page
 
 const String skillTitle = 'Skills';
-const String abDesc = 'I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.';
+const String skillDesc = 'I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.';

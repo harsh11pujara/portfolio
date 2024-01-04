@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_portfolio/pages/landing_page.dart';
 import 'package:my_portfolio/pages/about_me_page.dart';
+import 'package:my_portfolio/pages/skills_page.dart';
+import 'package:my_portfolio/pages/work_page.dart';
 import 'package:my_portfolio/utils/check_device.dart';
 
 class Home extends StatefulWidget {
@@ -20,7 +22,7 @@ class _HomeState extends State<Home> {
         children: [
           SizedBox(
             width: deviceWidth(context),
-            height: 2500,
+            height: 1350,
             child: Stack(
               children: [
                 landingBackground(),
@@ -35,10 +37,24 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-          /// Work Projects
-          Container(height: 500, color: Colors.blue[500],),
-          /// Skills Stack
-          Container(height: 500, color: Colors.blue[300],),
+          SizedBox(
+            width: deviceWidth(context),
+            height: 800,
+            child: Stack(
+              children: [
+                skillsBackground(),
+                worksBackground(),
+                const Column(
+                  children: [
+                    /// Skills page
+                    SkillsPage(),
+                    /// Work page
+                    WorkPage(),
+                  ],
+                ),
+              ],
+            ),
+          ),
           /// Contact me
           Container(height: 500, color: Colors.blue[100],)
         ],
@@ -49,9 +65,37 @@ class _HomeState extends State<Home> {
   Widget landingBackground() {
     return SvgPicture.asset(
       'assets/images/home_about_bg.svg',
-      fit: BoxFit.contain,
-      // width: deviceWidth(context) / 1.1,
+      fit: BoxFit.fill,
       alignment: Alignment.topLeft,
+    );
+  }
+
+  Widget skillsBackground() {
+    return Positioned(
+      right: 0,
+      top: 0,
+      child: SizedBox(
+        width: deviceWidth(context) * 0.8,
+        height: deviceHeight(context) * 2 ,
+        child: SvgPicture.asset(
+          'assets/images/skills_bg.svg',
+          // height: 1500,
+          fit: BoxFit.fitWidth,
+          alignment: Alignment.bottomRight,
+        ),
+      ),
+    );
+  }
+
+  Widget worksBackground() {
+    return Positioned(
+      bottom: 20,
+      child: SvgPicture.asset(
+        'assets/images/work_bg.svg',
+        fit: BoxFit.cover,
+        // width: deviceWidth(context) / 1.1,
+        // alignment: Alignment.bottomLeft,
+      ),
     );
   }
 }
