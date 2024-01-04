@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:my_portfolio/constants/string_const.dart';
 import 'package:my_portfolio/theme/app_colors.dart';
 import 'package:my_portfolio/theme/app_theme.dart';
 import 'package:my_portfolio/utils/check_device.dart';
@@ -22,9 +23,9 @@ class LandingPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Harsh Pujara', style: AppTheme.nameTextStyle,),
+              Text(name, style: AppTheme.nameTextStyle,),
               const SizedBox(height: 10,),
-              Text('Engineer + Junior Flutter Developer', style: AppTheme.descriptionTextStyle,),
+              Text(designation, style: AppTheme.descriptionTextStyle,),
               const SizedBox(height: 30,),
               Row(mainAxisAlignment: MainAxisAlignment.start,children: [
                 InkWell(onTap: () {}, child: SvgPicture.asset('assets/images/github_logo.svg', height: 30,)),

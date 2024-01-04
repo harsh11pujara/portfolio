@@ -14,5 +14,8 @@ class AppTheme{
   static TextStyle descriptionTextStyle = const TextStyle(fontFamily: 'LeagueSpartan-SemiBold', fontSize: 24, color: generalHeadingTextColor);
   static TextStyle scrollDownTextStyle = const TextStyle(fontFamily: 'LeagueSpartan-Medium', fontSize: 12, color: generalHeadingTextColor);
 
+  static TextStyle topicTitleTextStyle = const TextStyle(fontFamily: 'LeagueSpartan-Bold', fontSize: 32, color: secondaryOrangeColor);
+  static TextStyle topicDescriptionTextStyle = const TextStyle(fontFamily: 'LeagueSpartan-Regular', fontSize: 24, color: primaryAppColor, );
+
 
 }
