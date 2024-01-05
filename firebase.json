@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site" : "undefined",
+    "site" : "harsh-pujara-portfolio",
     "public": "public",
     "ignore": [
       "firebase.json",
