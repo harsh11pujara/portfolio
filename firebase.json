@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site" : "harsh-pujara-portfolio",
     "public": "public",
     "ignore": [
       "firebase.json",
